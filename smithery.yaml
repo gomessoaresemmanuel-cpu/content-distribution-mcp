@@ -1,0 +1,17 @@
+name: content-distribution-mcp
+description: "Multi-platform content distribution MCP — draft, repurpose, schedule, analyze posts for LinkedIn, Instagram, X/Twitter, TikTok from any AI agent"
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      contentDir:
+        type: string
+        description: "Path to content-os directory"
+    required: []
+  commandFunction: |-
+    (config) => ({
+      command: "npx",
+      args: ["-y", "content-distribution-mcp"],
+      env: config.contentDir ? { CONTENT_DIR: config.contentDir } : {}
+    })
