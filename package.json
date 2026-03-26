@@ -1,6 +1,6 @@
 {
   "name": "content-distribution-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for multi-platform content distribution — publish to LinkedIn, Instagram, X/Twitter, TikTok, and more from any AI agent",
   "mcpName": "io.github.gomessoaresemmanuel-cpu/content-distribution-mcp",
   "type": "module",
